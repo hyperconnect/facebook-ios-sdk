@@ -517,8 +517,8 @@
 			children = (
 				9D9947171A9531B5003375EC /* Bolts.framework */,
 				9D0043261AA91B18008DEB62 /* Bolts.framework */,
-				9D9947191A9531B5003375EC /* BoltsTests.xctest */,
-				9D99471B1A9531B5003375EC /* MacBoltsTests.xctest */,
+				9D9947191A9531B5003375EC /* BoltsTests-iOS.xctest */,
+				9D99471B1A9531B5003375EC /* BoltsTests-OSX.xctest */,
 				9D99471D1A9531B5003375EC /* BoltsTestUI.app */,
 			);
 			name = Products;
@@ -1160,17 +1160,17 @@
 			remoteRef = 9D9947161A9531B5003375EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9D9947191A9531B5003375EC /* BoltsTests.xctest */ = {
+		9D9947191A9531B5003375EC /* BoltsTests-iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = BoltsTests.xctest;
+			path = "BoltsTests-iOS.xctest";
 			remoteRef = 9D9947181A9531B5003375EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9D99471B1A9531B5003375EC /* MacBoltsTests.xctest */ = {
+		9D99471B1A9531B5003375EC /* BoltsTests-OSX.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = MacBoltsTests.xctest;
+			path = "BoltsTests-OSX.xctest";
 			remoteRef = 9D99471A1A9531B5003375EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1441,6 +1441,34 @@
 			};
 			name = Release;
 		};
+		FBAED8001BAF9481007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2697681A5DF43700143BFC /* FacebookSDK-Project-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		FBAED8011BAF9481007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2697651A5DF43700143BFC /* FacebookSDK-Library.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		FBAED8021BAF9481007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2697661A5DF43700143BFC /* FacebookSDK-LogicTests.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		FBAED8031BAF9481007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2697651A5DF43700143BFC /* FacebookSDK-Library.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1449,6 +1477,7 @@
 			buildConfigurations = (
 				9D26975B1A5DF40700143BFC /* Debug */,
 				9D26975C1A5DF40700143BFC /* Release */,
+				FBAED8001BAF9481007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1458,6 +1487,7 @@
 			buildConfigurations = (
 				9D26975E1A5DF40700143BFC /* Debug */,
 				9D26975F1A5DF40700143BFC /* Release */,
+				FBAED8011BAF9481007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1467,6 +1497,7 @@
 			buildConfigurations = (
 				9D2697611A5DF40700143BFC /* Debug */,
 				9D2697621A5DF40700143BFC /* Release */,
+				FBAED8021BAF9481007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1476,6 +1507,7 @@
 			buildConfigurations = (
 				9D2697721A5DF56700143BFC /* Debug */,
 				9D2697731A5DF56700143BFC /* Release */,
+				FBAED8031BAF9481007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
