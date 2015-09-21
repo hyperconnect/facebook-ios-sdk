@@ -507,6 +507,34 @@
 			};
 			name = Release;
 		};
+		FBAED8101BAF948D007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893774B41A3B818300BE2807 /* FacebookSDK-Project-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		FBAED8111BAF948D007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893774B11A3B818300BE2807 /* FacebookSDK-Library.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		FBAED8121BAF948D007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893774B21A3B818300BE2807 /* FacebookSDK-LogicTests.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		FBAED8131BAF948D007C7297 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893774B11A3B818300BE2807 /* FacebookSDK-Library.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -515,6 +543,7 @@
 			buildConfigurations = (
 				9D9DB8ED1A114E500086167B /* Debug */,
 				9D9DB8EE1A114E500086167B /* Release */,
+				FBAED8101BAF948D007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -524,6 +553,7 @@
 			buildConfigurations = (
 				9D9DB8F01A114E500086167B /* Debug */,
 				9D9DB8F11A114E500086167B /* Release */,
+				FBAED8111BAF948D007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -533,6 +563,7 @@
 			buildConfigurations = (
 				9D9DB8F31A114E500086167B /* Debug */,
 				9D9DB8F41A114E500086167B /* Release */,
+				FBAED8121BAF948D007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -542,6 +573,7 @@
 			buildConfigurations = (
 				9D9DB9611A116A860086167B /* Debug */,
 				9D9DB9621A116A860086167B /* Release */,
+				FBAED8131BAF948D007C7297 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
