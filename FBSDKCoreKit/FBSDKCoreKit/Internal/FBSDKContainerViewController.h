@@ -26,7 +26,7 @@
 
 @end
 
-@interface FBSDKContainerViewController : UIViewController
+@interface FBSDKContainerViewController : UIViewController <UIViewControllerTransitioningDelegate>
 
 @property (nonatomic, weak) id<FBSDKContainerViewControllerDelegate> delegate;
 

@@ -17,6 +17,7 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "FBSDKContainerViewController.h"
+#import "AZAR_Modification.h"
 
 @implementation FBSDKContainerViewController
 
@@ -36,4 +37,10 @@
   [childController didMoveToParentViewController:self];
 }
 
+- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
+    return  [[AZAR_PresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+}
+
 @end
+
+
