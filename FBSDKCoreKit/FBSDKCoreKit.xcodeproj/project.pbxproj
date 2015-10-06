@@ -192,6 +192,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2C3994D71BC3CE06004D6727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E5557191A8D3D7400344F86 /* Bolts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBC6E7F71BAFD9C900622035;
+			remoteInfo = Bolts;
+		};
+		2C3994E21BC3CE06004D6727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E55573F1A8E89A800344F86 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 725CD99B1A9EB65100F84C8B;
+			remoteInfo = "OHHTTPStubs iOS Framework";
+		};
 		7E55574B1A8E89A800344F86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E55573F1A8E89A800344F86 /* OHHTTPStubs.xcodeproj */;
@@ -206,26 +220,12 @@
 			remoteGlobalIDString = 8E9C3CE817DE9DE000427E62;
 			remoteInfo = Bolts;
 		};
-		9D0043251AA91B18008DEB62 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E5557191A8D3D7400344F86 /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8EDDA63517E17DDD00655F8A;
-			remoteInfo = MacBolts;
-		};
 		9D2697771A5DF6D600143BFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D26973E1A5DF40700143BFC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D2697461A5DF40700143BFC;
 			remoteInfo = FBSDKCoreKit;
-		};
-		9D9947161A9531B5003375EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E5557191A8D3D7400344F86 /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8EDDA63517E17DDD00655F8A;
-			remoteInfo = MacBolts;
 		};
 		9D9947181A9531B5003375EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -515,8 +515,7 @@
 		7E55571A1A8D3D7400344F86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D9947171A9531B5003375EC /* Bolts.framework */,
-				9D0043261AA91B18008DEB62 /* Bolts.framework */,
+				2C3994D81BC3CE06004D6727 /* Bolts.framework */,
 				9D9947191A9531B5003375EC /* BoltsTests-iOS.xctest */,
 				9D99471B1A9531B5003375EC /* BoltsTests-OSX.xctest */,
 				9D99471D1A9531B5003375EC /* BoltsTestUI.app */,
@@ -537,6 +536,7 @@
 			children = (
 				7E55574C1A8E89A800344F86 /* libOHHTTPStubs.a */,
 				9D99472F1A9531B5003375EC /* OHHTTPStubs iOS Tests.xctest */,
+				2C3994E31BC3CE06004D6727 /* OHHTTPStubs.framework */,
 				9D9947311A9531B5003375EC /* OHHTTPStubs.framework */,
 				9D9947331A9531B5003375EC /* OHHTTPStubs Mac Tests.xctest */,
 			);
@@ -1139,25 +1139,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		2C3994D81BC3CE06004D6727 /* Bolts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Bolts.framework;
+			remoteRef = 2C3994D71BC3CE06004D6727 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2C3994E31BC3CE06004D6727 /* OHHTTPStubs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OHHTTPStubs.framework;
+			remoteRef = 2C3994E21BC3CE06004D6727 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7E55574C1A8E89A800344F86 /* libOHHTTPStubs.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libOHHTTPStubs.a;
 			remoteRef = 7E55574B1A8E89A800344F86 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9D0043261AA91B18008DEB62 /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 9D0043251AA91B18008DEB62 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9D9947171A9531B5003375EC /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 9D9947161A9531B5003375EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		9D9947191A9531B5003375EC /* BoltsTests-iOS.xctest */ = {
@@ -1403,6 +1403,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D2697651A5DF43700143BFC /* FacebookSDK-Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -1410,6 +1411,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D2697651A5DF43700143BFC /* FacebookSDK-Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
@@ -1452,6 +1454,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D2697651A5DF43700143BFC /* FacebookSDK-Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = QA;
 		};
