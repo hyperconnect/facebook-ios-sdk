@@ -823,6 +823,35 @@
 			};
 			name = Release;
 		};
+		F25EB7741D6EEB5D00D11A9A /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893774A11A3B7F6C00BE2807 /* FacebookSDK-Project-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		F25EB7751D6EEB5D00D11A9A /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8937749E1A3B7F6C00BE2807 /* FacebookSDK-Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = QA;
+		};
+		F25EB7761D6EEB5D00D11A9A /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8937749F1A3B7F6C00BE2807 /* FacebookSDK-LogicTests.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
+		F25EB7771D6EEB5D00D11A9A /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8937749E1A3B7F6C00BE2807 /* FacebookSDK-Library.xcconfig */;
+			buildSettings = {
+			};
+			name = QA;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -831,6 +860,7 @@
 			buildConfigurations = (
 				9D46C6041A11E5D800A0DDB6 /* Debug */,
 				9D46C6051A11E5D800A0DDB6 /* Release */,
+				F25EB7741D6EEB5D00D11A9A /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -840,6 +870,7 @@
 			buildConfigurations = (
 				9D46C6071A11E5D800A0DDB6 /* Debug */,
 				9D46C6081A11E5D800A0DDB6 /* Release */,
+				F25EB7751D6EEB5D00D11A9A /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -849,6 +880,7 @@
 			buildConfigurations = (
 				9D46C60A1A11E5D800A0DDB6 /* Debug */,
 				9D46C60B1A11E5D800A0DDB6 /* Release */,
+				F25EB7761D6EEB5D00D11A9A /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -858,6 +890,7 @@
 			buildConfigurations = (
 				9D46C6121A11E6D800A0DDB6 /* Debug */,
 				9D46C6131A11E6D800A0DDB6 /* Release */,
+				F25EB7771D6EEB5D00D11A9A /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
