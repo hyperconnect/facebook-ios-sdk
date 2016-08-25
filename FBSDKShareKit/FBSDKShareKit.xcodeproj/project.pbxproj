@@ -783,6 +783,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8937749E1A3B7F6C00BE2807 /* FacebookSDK-Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -790,6 +791,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8937749E1A3B7F6C00BE2807 /* FacebookSDK-Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
