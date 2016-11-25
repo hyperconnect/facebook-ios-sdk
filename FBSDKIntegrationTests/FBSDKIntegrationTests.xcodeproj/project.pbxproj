@@ -276,7 +276,7 @@
 		9D1999A91A7AF41B00CAD112 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0810;
 				TargetAttributes = {
 					9D1999B21A7AF44B00CAD112 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -389,6 +389,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D1999C11A7AF46300CAD112 /* FacebookSDK-Project-Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -396,6 +399,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D1999C21A7AF46300CAD112 /* FacebookSDK-Project-Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -403,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8918E3E61AFA66CD003F7B88 /* FacebookSDK-ApplicationTests.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.sdk.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
 		};
@@ -410,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8918E3E61AFA66CD003F7B88 /* FacebookSDK-ApplicationTests.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.sdk.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
 		};
@@ -417,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D1999BE1A7AF46300CAD112 /* FacebookSDK-Application.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.sdk.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
 		};
@@ -424,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D1999BE1A7AF46300CAD112 /* FacebookSDK-Application.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.sdk.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
 		};
