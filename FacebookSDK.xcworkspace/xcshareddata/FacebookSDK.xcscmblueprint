@@ -16,9 +16,9 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "38C2A0D4F62B675E8C16C8BC1437C7753846C8AC" : "facebook-ios-sdk\/vendor\/OHHTTPStubs\/",
     "497FFDFDB4AEB909526F7F78BF8A443B04B42706" : "..",
-    "0DCFF0852789D5A49F67B6C8EA2636735D303748" : "Bolts-iOS\/Vendor\/xctoolchain\/",
+    "0DCFF0852789D5A49F67B6C8EA2636735D303748" : "facebook-ios-sdk\/Bolts-IOS\/Vendor\/xctoolchain\/",
     "A20D666FF4B08EFE53F147818C2D4D17E2242912" : "facebook-ios-sdk\/",
-    "61C4B9E3B61282127C102C87B46B8CDE985974AE" : "Bolts-iOS\/",
+    "61C4B9E3B61282127C102C87B46B8CDE985974AE" : "facebook-ios-sdk\/Bolts-IOS\/",
     "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : "facebook-ios-sdk\/vendor\/OHHTTPStubs\/OHHTTPStubs\/UnitTests\/AFNetworking\/",
     "E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025" : "facebook-ios-sdk\/vendor\/OCMock\/"
   },
