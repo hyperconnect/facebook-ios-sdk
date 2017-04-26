@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/facebook/facebook-ios-sdk.git",
-                     :tag => "sdk-version-4.1.0"
+  s.source       = { :git => "https://github.com/hyperconnect/facebook-ios-sdk.git",
+                     :branch => "cocoapods"
                     }
 
   s.weak_frameworks = "Accounts", "CoreLocation", "Social", "Security", "QuartzCore", "CoreGraphics", "UIKit", "Foundation", "AudioToolbox"
@@ -44,13 +44,13 @@ Pod::Spec.new do |s|
     spec.source_files   = "FBSDKLoginKit/FBSDKLoginKit/**/*.{h,m}"
     spec.public_header_files = "FBSDKLoginKit/FBSDKLoginKit/*.{h}"
     spec.header_dir = "FBSDKLoginKit"
-    spec.dependency 'Facebook-iOS-SDK/CoreKit'
+    spec.dependency 'Facebook-iOS-SDK/CoreKit', '4.5.1'
   end
   s.subspec 'ShareKit' do |spec|
     spec.source_files   = "FBSDKShareKit/FBSDKShareKit/**/*.{h,m}"
     spec.public_header_files = "FBSDKShareKit/FBSDKShareKit/*.{h}"
     spec.header_dir = "FBSDKShareKit"
-    spec.dependency 'Facebook-iOS-SDK/CoreKit'
+    spec.dependency 'Facebook-iOS-SDK/CoreKit', '4.5.1'
   end
 
   s.deprecated = true

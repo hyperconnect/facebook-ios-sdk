@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/facebook/facebook-ios-sdk.git",
-                     :tag => "sdk-version-4.5.1"
+  s.source       = { :git => "https://github.com/hyperconnect/facebook-ios-sdk.git",
+                     :branch => "cocoapods"
                     }
 
   s.weak_frameworks = "Accounts", "CoreLocation", "Social", "Security", "QuartzCore", "CoreGraphics", "UIKit", "Foundation", "AudioToolbox"
@@ -30,6 +30,6 @@ Pod::Spec.new do |s|
   s.source_files   = "FBSDKLoginKit/FBSDKLoginKit/**/*.{h,m}"
   s.public_header_files = "FBSDKLoginKit/FBSDKLoginKit/*.{h}"
   s.header_dir = "FBSDKLoginKit"
-  s.dependency 'FBSDKCoreKit'
+  s.dependency 'FBSDKCoreKit', '4.5.1'
 
 end
