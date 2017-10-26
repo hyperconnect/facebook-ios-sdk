@@ -46,6 +46,22 @@ static NSString *const kFBSDKAccessTokenEncodedKey = @"tokenEncoded";
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   NSString *uuid = [defaults objectForKey:kFBSDKAccessTokenUserDefaultsKey];
 
+  /// HOTFIX AZIOS-1556
+  NSDictionary *oldDict = [_keychainStore dictionaryForKey:kFBSDKAccessTokenUserDefaultsKey];
+  if ([oldDict[kFBSDKAccessTokenUUIDKey] isEqualToString:uuid]) {
+    id tokenData = oldDict[kFBSDKAccessTokenEncodedKey];
+    if ([tokenData isKindOfClass:[NSData class]]) {
+      FBSDKAccessToken *oldToken = [NSKeyedUnarchiver unarchiveObjectWithData:tokenData];
+      if (oldToken) {
+        [self cacheAccessToken:oldToken];
+      }
+      [_keychainStore setDictionary:nil
+                             forKey:kFBSDKAccessTokenUserDefaultsKey
+                      accessibility:NULL];
+    }
+  }
+  ///
+
   NSDictionary *dict = [_keychainStore dictionaryForKey:kFBSDKAccessTokenKeychainKey];
   if ([dict[kFBSDKAccessTokenUUIDKey] isKindOfClass:[NSString class]]) {
     // there is a bug while running on simulator that the uuid stored in dict can be NSData,
